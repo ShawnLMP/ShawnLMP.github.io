@@ -1,7 +1,16 @@
 <html>
   <header><title>This is title</title></header>
-
   <body>
-    Image: <input type="file" accept="image/*" capture="camera" />
+    Image: <input id="image" type="file" accept="image/*" capture="camera" />
+    <button onclick="upload(document.getElementById('image').value)">
+      upload
+    </button>
+
+    <script>
+      function upload(a) {
+        console.log(a);
+      }
+    </script>
   </body>
 </html>
+
